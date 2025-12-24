@@ -56,11 +56,48 @@ int main(){
 //	strrev(str1);
 //	printf("%s",str1);
 
-	char str[] = "lekhit";
-    int len;
-    len = strlen(str);
-    printf("First letter: %c\n", str[0]);
-    printf("Last letter : %c\n", str[len - 1]);
+//	char str[] = "Indiaaa is best";
+//    int len = strlen(str);;
+//    printf("First letter: %c\n", str[0]);
+//    printf("Last letter : %c\n", str[len - 1]);
+//	int i = 0;
+//	while(str[i] != '\0')
+//	i++;
+//	printf("Length = %d", i);
+	
+	
+//	char str[] = "India is best ";
+//    int i, count = 1;
+//
+//    for(i = 0; str[i] != '\0'; i++) {
+//        if(str[i] == ' ' && str[i + 1] != ' ') {
+//            count++;
+//        }
+//    }
+//    printf("Total words = %d", count);
+
+//	char str[] = "banana";
+//   	int i, count = 1;
+//  	for(i = 0; str[i] != '\0'; i++) {
+//  		if(str[i] == 'a') {
+//            str[i] = '@';
+//        }
+//	}
+//	printf("Updated String is : %s", str);
+
+	char str[20], rev[20];
+	
+    printf("Enter a string: ");
+    scanf("%s", str);
+    
+    strcpy(rev,str);
+    strrev(rev);
+    
+    if(strcmp(str,rev) == 0)
+        printf("Palindrome");
+    else
+        printf("Not Palindrome");	
+	
 	
 	return 0;
 }
